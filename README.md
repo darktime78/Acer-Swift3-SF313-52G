@@ -47,10 +47,13 @@ The test is normal on 1.08. There is no guarantee that other versions will not h
 
 4. Perform the following modifications
 * Disable CFG Lock
+![CFGLock](https://github.com/darktime78/Acer-Swift3-SF313-52G/blob/main/images/CFG_Lock.png)  
 
 * DVMT Pre-Allocated
+![DVMT](https://github.com/darktime78/Acer-Swift3-SF313-52G/blob/main/images/DVMT.png)  
 
 * Disable Low Power S0 (Enable S3)
+![S0](https://github.com/darktime78/Acer-Swift3-SF313-52G/blob/main/images/Low_Power_S0.png)  
 
 5. Click File->Save and restart system
   
