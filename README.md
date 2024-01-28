@@ -25,3 +25,17 @@ LCD | IPS（13.5 Inches 3:2 2k)
 ## Known issues
 - The built-in microphone is Intel Smart Sound Technology and cannot be driven
 - The HDMI driver has been removed from the official driver. HDMI on the body cannot be used and a type-c adapter is required.
+
+## Modify BIOS settings
+Modifications are risky, please proceed with caution
+The test is normal on 1.08. There is no guarantee that other versions will not have problems.
+1. First open WDFInst.exe, then open H2OUVE-W-GUIx64.exe
+
+2. Click File->Load runtime
+
+3. Click the green Variable on the left
+
+4. Perform the following modifications
+* Disable Low Power S0 (Enable S3)
+5. Click File->Save and restart system
+  
