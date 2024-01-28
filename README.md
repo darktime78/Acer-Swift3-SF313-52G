@@ -9,7 +9,7 @@ SSD |	Intel(R) 660p 1Tb
 RAM |	16GB LPDDR4X 3200MHz
 Wifi + Bluetooth | Intel(R) Wifi 6 AX201 
 Audio  |	Conexant CX8400
-LCD | IPS（13.5 Inches 3:2 2k)
+LCD | IPS (13.5 Inches 3:2 2k)
 ## System version - Ventura 13.6.1
 - For other versions, please replace `AirportItlwm.kext` by yourself
 - Please add `IntelBluetoothInjector.kext` for versions below Monterey, [Reference for details](https://openintelwireless.github.io/IntelBluetoothFirmware/FAQ.html#what-additional-steps-should-i-do-to-make-bluetooth -work-on-macos-monterey)
@@ -25,6 +25,8 @@ LCD | IPS（13.5 Inches 3:2 2k)
 ## Known issues
 - The built-in microphone is Intel Smart Sound Technology and cannot be driven
 - The HDMI driver has been removed from the official driver. HDMI on the body cannot be used and a type-c adapter is required.
+- Thunderbolt 3
+- Fan RPM is not working.
 
 ## Firmware BIOS without OS
 1. Downloaded the latest v1.08 BIOS archive file from Official Acer site. It's an EXE file (BIOS_Acer_1.08_A_A.exe) that can be extracted via 7z. 
