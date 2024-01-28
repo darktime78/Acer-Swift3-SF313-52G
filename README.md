@@ -14,7 +14,7 @@ LCD | IPS（13.5 Inches 3:2 2k)
 - For other versions, please replace `AirportItlwm.kext` by yourself
 - Please add `IntelBluetoothInjector.kext` for versions below Monterey, [Reference for details](https://openintelwireless.github.io/IntelBluetoothFirmware/FAQ.html#what-additional-steps-should-i-do-to-make-bluetooth -work-on-macos-monterey)
 ## Bios settings
-* Main->Ctrl＋s->SATA Mode->AHCI
+* Main->Ctrl+s->SATA Mode->AHCI
 * Main->Fast Boot->Disabled
 * Main->Security->Set Supervisor Password->Change TPM (TCM) State->Disable (otherwise you will sleep until the battery runs out with black screen) Trusted Platform Module (TPM)
 ### Optional
@@ -26,6 +26,16 @@ LCD | IPS（13.5 Inches 3:2 2k)
 - The built-in microphone is Intel Smart Sound Technology and cannot be driven
 - The HDMI driver has been removed from the official driver. HDMI on the body cannot be used and a type-c adapter is required.
 
+## Firmware BIOS without OS
+1. Downloaded the latest v1.08 BIOS archive file from Official Acer site. It's an EXE file (BIOS_Acer_1.08_A_A.exe) that can be extracted via 7z. 
+2. Copy the BIOS file __BiosEc.fd__ to an empty and with FAT16/32 formatted usb stick.
+2. Unplug the AC adapter.
+3. Plug in the USB flash disk.
+4. Press and hold <Fn> and <Esc>, and then plug in the AC adapter while still holding <Fn> and <Esc>.
+5. Press the Power button. You can now stop holding <Fn> and <Esc>.
+6. The BIOS flash should now begin, the fan will spin up and the power led should change its state.
+7. After everything is done, the notebook will shut down.
+
 ## Modify BIOS settings
 Modifications are risky, please proceed with caution
 The test is normal on 1.08. There is no guarantee that other versions will not have problems.
@@ -36,6 +46,11 @@ The test is normal on 1.08. There is no guarantee that other versions will not h
 3. Click the green Variable on the left
 
 4. Perform the following modifications
+* Disable CFG Lock
+
+* DVMT Pre-Allocated
+
 * Disable Low Power S0 (Enable S3)
+
 5. Click File->Save and restart system
   
